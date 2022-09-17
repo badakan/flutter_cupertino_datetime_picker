@@ -28,8 +28,7 @@ class _DatePickerInPageState extends State<DatePickerInPage> {
 
   @override
   Widget build(BuildContext context) {
-    TextStyle hintTextStyle =
-        Theme.of(context).textTheme.subtitle1!.apply(color: Color(0xFF999999));
+    TextStyle hintTextStyle = Theme.of(context).textTheme.subtitle1!.apply(color: Color(0xFF999999));
     return Scaffold(
       appBar: AppBar(title: Text("DatePicker In Page")),
       body: Container(
@@ -46,8 +45,7 @@ class _DatePickerInPageState extends State<DatePickerInPage> {
                     width: 115.0,
                     child: Text('min DateTime:', style: hintTextStyle),
                   ),
-                  Text(MIN_DATETIME,
-                      style: Theme.of(context).textTheme.subtitle1),
+                  Text(MIN_DATETIME, style: Theme.of(context).textTheme.subtitle1),
                 ],
               ),
             ),
@@ -57,11 +55,8 @@ class _DatePickerInPageState extends State<DatePickerInPage> {
               padding: EdgeInsets.only(bottom: 8.0),
               child: Row(
                 children: <Widget>[
-                  Container(
-                      width: 115.0,
-                      child: Text('max DateTime:', style: hintTextStyle)),
-                  Text(MAX_DATETIME,
-                      style: Theme.of(context).textTheme.subtitle1),
+                  Container(width: 115.0, child: Text('max DateTime:', style: hintTextStyle)),
+                  Text(MAX_DATETIME, style: Theme.of(context).textTheme.subtitle1),
                 ],
               ),
             ),
@@ -75,8 +70,7 @@ class _DatePickerInPageState extends State<DatePickerInPage> {
                     width: 115.0,
                     child: Text('init DateTime:', style: hintTextStyle),
                   ),
-                  Text(INIT_DATETIME,
-                      style: Theme.of(context).textTheme.subtitle1),
+                  Text(INIT_DATETIME, style: Theme.of(context).textTheme.subtitle1),
                 ],
               ),
             ),
@@ -90,8 +84,7 @@ class _DatePickerInPageState extends State<DatePickerInPage> {
                     width: 115.0,
                     child: Text('Date Format:', style: hintTextStyle),
                   ),
-                  Text(DATE_FORMAT,
-                      style: Theme.of(context).textTheme.subtitle1),
+                  Text(DATE_FORMAT, style: Theme.of(context).textTheme.subtitle1),
                 ],
               ),
             ),
@@ -120,7 +113,7 @@ DateTimePickerTheme(
                       style: TextStyle(fontSize: 14.0),
                     ),
                     actions: <Widget>[
-                      new FlatButton(
+                      new TextButton(
                         child: new Text("OK"),
                         onPressed: () {
                           Navigator.of(context).pop();
@@ -135,8 +128,7 @@ DateTimePickerTheme(
                 child: Row(
                   children: <Widget>[
                     Container(
-                      child:
-                          Text('DateTimePickerTheme  ', style: hintTextStyle),
+                      child: Text('DateTimePickerTheme  ', style: hintTextStyle),
                     ),
                     Icon(Icons.remove_red_eye, color: Color(0xFF03a9f4)),
                   ],
@@ -173,14 +165,11 @@ DateTimePickerTheme(
             Row(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
-                Text('Selected Date:',
-                    style: Theme.of(context).textTheme.subtitle1),
+                Text('Selected Date:', style: Theme.of(context).textTheme.subtitle1),
                 Container(
                   padding: EdgeInsets.only(left: 12.0),
                   child: Text(
-                    _dateTime != null
-                        ? '${_dateTime!.year}-${_dateTime!.month.toString().padLeft(2, '0')}-${_dateTime!.day.toString().padLeft(2, '0')}'
-                        : '',
+                    _dateTime != null ? '${_dateTime!.year}-${_dateTime!.month.toString().padLeft(2, '0')}-${_dateTime!.day.toString().padLeft(2, '0')}' : '',
                     style: Theme.of(context).textTheme.headline6,
                   ),
                 ),

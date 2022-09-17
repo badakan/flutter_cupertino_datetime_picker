@@ -34,62 +34,50 @@ class MyHomePage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            RaisedButton(
-              color: Colors.blue,
+            ElevatedButton(
               child: Text("DatePicker Bottom Sheet", style: textStyle),
               onPressed: () {
-                Navigator.of(context)
-                    .push(MaterialPageRoute(builder: (context) {
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) {
                   return DatePickerBottomSheet();
                 }));
               },
             ),
-            RaisedButton(
-              color: Colors.blue,
+            ElevatedButton(
               child: Text("DatePicker In Page", style: textStyle),
               onPressed: () {
-                Navigator.of(context)
-                    .push(MaterialPageRoute(builder: (context) {
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) {
                   return DatePickerInPage();
                 }));
               },
             ),
-            RaisedButton(
-              color: Colors.blue,
+            ElevatedButton(
               child: Text("TimePicker Bottom Sheet", style: textStyle),
               onPressed: () {
-                Navigator.of(context)
-                    .push(MaterialPageRoute(builder: (context) {
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) {
                   return TimePickerBottomSheet();
                 }));
               },
             ),
-            RaisedButton(
-              color: Colors.blue,
+            ElevatedButton(
               child: Text("TimePicker In Page", style: textStyle),
               onPressed: () {
-                Navigator.of(context)
-                    .push(MaterialPageRoute(builder: (context) {
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) {
                   return TimePickerInPage();
                 }));
               },
             ),
-            RaisedButton(
-              color: Colors.blue,
+            ElevatedButton(
               child: Text("DateTimePicker Bottom Sheet", style: textStyle),
               onPressed: () {
-                Navigator.of(context)
-                    .push(MaterialPageRoute(builder: (context) {
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) {
                   return DateTimePickerBottomSheet();
                 }));
               },
             ),
-            RaisedButton(
-              color: Colors.blue,
+            ElevatedButton(
               child: Text("DateTimePicker In Page", style: textStyle),
               onPressed: () {
-                Navigator.of(context)
-                    .push(MaterialPageRoute(builder: (context) {
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) {
                   return DateTimePickerInPage();
                 }));
               },
